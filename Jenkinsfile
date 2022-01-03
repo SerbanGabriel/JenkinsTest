@@ -17,5 +17,15 @@ pipeline {
                 echo 'Deploying....'
             }
         }
+        stage('Something'){
+        steps {
+             test()
+            }
+        }
+        def test() {
+            echo "Start"
+            sleep(5)
+            echo "Stop"
+        }
     }
 }
