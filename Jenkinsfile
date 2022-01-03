@@ -19,13 +19,8 @@ pipeline {
         }
         stage('Something'){
         steps {
-             test()
+                sh 'sleep 300'
             }
-        }
-        def test() {
-            echo "Start"
-            sleep(5)
-            echo "Stop"
         }
     }
 }
